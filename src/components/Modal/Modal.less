@@ -1,0 +1,119 @@
+.modal {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 10;
+
+  &__content {
+    background: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+    color: #444444;
+    left: 50%;
+    padding: 24px 16px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+  }
+
+  &__title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    text-align: center;
+  }
+
+  &__dividor {
+    border-bottom: 3px solid #444444;
+    height: 0px;
+    margin: 12px auto 24px;
+    width: 60px;
+  }
+
+  &__input {
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    display: block;
+    font-size: 16px;
+    height: 34px;
+    line-height: 22px;
+    margin-bottom: 16px;
+    outline: none;
+    padding: 4px 12px;
+    width: 100%;
+
+    &--error {
+      border-color: red;
+    }
+  }
+
+  &__submit {
+    border: 1px solid #444444;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 50px auto 0px;
+    padding: 4px 8px;
+    text-align: center;
+    width: 100%;
+
+    &--sending {
+      background: #aaaaaa;
+      border-color: #cccccc;
+      color: #cccccc;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__error {
+    color: red;
+    font-size: 14px;
+    margin: 12px 0px 0px;
+    text-align: center;
+  }
+
+  &__close {
+    border: 1px solid #444444;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 50px auto 0px;
+    padding: 4px 8px;
+    text-align: center;
+    width: 100%;
+
+    &--sending {
+      background: #aaaaaa;
+      border-color: #cccccc;
+      color: #cccccc;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+
+  }
+
+  @media screen and (max-width: 767px) {
+    &__content {
+      max-width: 450px;
+      width: 80%;
+    }
+
+    &__submit {
+      margin-top: 24px;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.footer {
+  background: #f0f0f0;
+  bottom: 0px;
+  left: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+  &__content {
+    color: #888888;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin: auto;
+    overflow: hidden;
+    padding: 8px 0px;
+    text-align: center;
+    width: 1025px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    &__content {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &__content {
+      font-size: 12px;
+      line-height: 16px;
+      padding: 4px 0px;
+    }
+  }
+}
