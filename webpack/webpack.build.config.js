@@ -19,13 +19,13 @@ module.exports = function(options) {
     optimization: {
       splitChunks: {
         chunks: "all",
-        minSize: 30000, // 模块的最小体积
-        minChunks: 1, // 模块的最小被引用次数
-        maxAsyncRequests: 5, // 按需加载的最大并行请求数
-        maxInitialRequests: 3, // 一个入口最大并行请求数
-        automaticNameDelimiter: '~', // 文件名的连接符
+        minSize: 30000,
+        minChunks: 1,
+        maxAsyncRequests: 5,
+        maxInitialRequests: 3,
+        automaticNameDelimiter: '~',
         name: true,
-        cacheGroups: { // 缓存组
+        cacheGroups: {
           vendors: {
             test: /[\\/]node_modules[\\/]/,
             priority: -10
